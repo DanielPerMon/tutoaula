@@ -46,7 +46,7 @@
 
 <script>
 import axios from "axios";
-var audio = new Audio("./1-19 Petalburg City.mp3");
+var audio = new Audio("./Deoxys.mp3");
 
 export default {
   name: "gif",
