@@ -1,0 +1,15 @@
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+            var minutos = prompt("Cantidad de minutos: ","");
+
+            document.writeln("Días: "+parseInt(minutos/1440,10));
+            document.write("<br>");
+            document.writeln("Horas: "+parseInt((minutos%1440)/60,10));
+            document.write("<br>");
+            document.writeln("Minutos: "+(minutos%1440)%60);
+
+        </script>
+    </body>
+</html>

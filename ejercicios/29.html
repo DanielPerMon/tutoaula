@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjercicioJS 29</title>
+</head>
+
+<body>
+    <header>EjercicioJs 29</header>
+    <section>
+        Escribir un algoritmo que ordene una lista de números indicando al
+        final la cantidad de números pares y la cantidad de números impares, el
+        dato a ingresar es un número y se debe repetir el proceso mientras el
+        número ingresado sea diferente a cero.
+    </section>
+    <div>
+        <form>
+            Tarifa:
+            <input type="number" id="numero">
+            <button type="button" onclick="guardar();">ingresar</button>
+
+
+        </form>
+    </div>
+    <div>
+        Numeros:
+        <p id="lis"></p>
+        <br>
+        Lista Ordenada:
+        <p id="lista"></p>
+        <br>
+        Numeros pares:
+        <p id="pares"></p>
+        <br>
+        Numeros impares:
+        <p id="impares"></p>
+
+
+    </div>
+</body>
+<script>
+    window.onload = function () {
+        window.numeros = [];
+        window.num = '';
+        window.q = 0;
+        window.w = 0;
+
+    }
+    function ordenar(a, b) {
+        return (a - b);
+    }
+    function guardar() {
+        var horas = parseInt(document.getElementById('numero').value);
+
+        if (horas == 0) {
+            document.getElementById('lista').innerHTML = numeros.sort(ordenar);
+            document.getElementById('pares').innerHTML = q;
+            document.getElementById('impares').innerHTML = w;
+        } else {
+            numeros.push(horas);
+            num = num + horas + '.';
+            document.getElementById('lis').innerHTML = num;
+            if (horas % 2 == 0) {
+                q = q + 1;
+            } else {
+                w = 1 + w;
+            }
+        }
+    }
+</script>
+
+</html>

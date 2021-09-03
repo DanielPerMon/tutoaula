@@ -1,0 +1,38 @@
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+            var notas = parseInt(prompt("Notas del alumno: ",""));
+            var arr = [];
+            var aprobadas = 0;
+            var reprobadas= 0;
+            var sumaA = 0;
+            var sumaR = 0;
+
+            for(let i=0; i<notas;i++){
+                arr[i] = parseInt(prompt("Ingrese la nota: "+(i+1),""));
+            }
+
+            for(let i=0; i<arr.length; i++){
+                if(arr[i]>5){
+                    aprobadas++;
+                    sumaA += arr[i]
+                }
+                else{
+                    reprobadas++;
+                    sumaR += arr[i];
+                }
+            }
+
+            document.write("Materias Totales: "+notas);
+            document.write("<br>");
+            document.write("Materias Aprobadas: "+aprobadas);
+            document.write("<br>");
+            document.write("Promedio Aprobadas: "+sumaA/aprobadas);
+            document.write("<br>");
+            document.write("Materias Reprobadas: "+reprobadas);
+            document.write("<br>");
+            document.write("Promedio Reprobadas: "+sumaR/reprobadas);
+        </script>
+    </body>
+</html>

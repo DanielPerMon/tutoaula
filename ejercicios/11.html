@@ -1,0 +1,41 @@
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+            var res = 0;
+            var cantidad = prompt("Monto vendido: ","");
+            var sueldo = prompt("Sueldo del vendedor","")
+            
+            if(cantidad >= 10000){
+                document.writeln("Sueldo: "+sueldo);
+                document.write("<br>");
+                document.writeln("Ventas: "+cantidad);
+                document.write("<br>");
+                document.writeln("Comision: "+sueldo*0.15);
+                document.write("<br>");
+                document.writeln("Sueldo total: "+sueldo*1.15);
+            }
+            else{
+                if(cantidad < 10000 && cantidad >= 5000){
+                    document.writeln("Sueldo: "+sueldo);
+                    document.write("<br>");
+                    document.writeln("Ventas: "+cantidad);
+                    document.write("<br>");
+                    document.writeln("Comision: "+sueldo*0.05);
+                    document.write("<br>");
+                    document.writeln("Sueldo total: "+sueldo*1.05);
+                }
+                else{
+                    document.writeln("Sueldo: "+sueldo);
+                    document.write("<br>");
+                    document.writeln("Ventas: "+cantidad);
+                    document.write("<br>");
+                    document.writeln("Comision: 0%");
+                    document.write("<br>");
+                    document.writeln("Sueldo total: "+sueldo);
+                }
+            }
+
+        </script>
+    </body>
+</html>

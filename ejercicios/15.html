@@ -1,0 +1,28 @@
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+            do{
+                var num = Math.floor(Math.random() * (200 - -200 + 1) ) + -200;
+
+                if(num < 15 && num > 0 ){
+                    document.write(num + " menor que 15");
+                    document.write("<br>");
+                }
+                else{
+                    if(num >=25 && num <= 50){
+                        document.write(num + " se encuentra entre 25 y 50");
+                        document.write("<br>");
+                    }
+                    else{
+                        if(num > 50){
+                            document.write(num+ " mayor que 50");
+                            document.write("<br>");
+                        }
+                    }
+                }
+            }while(num > 0);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+            var pares=0;
+            var impares=0;
+            var positivos=0;
+            var negativos=0;
+            for(let i=0; i<50;i++){
+                let num = Math.floor(Math.random() * (200 - -200 + 1) ) + -200;
+
+                if(num >0)
+                    positivos++;
+                else
+                    negativos++;
+                if(num%2==0)
+                    pares++;
+                else
+                    impares++;
+            }   
+
+            document.write("Números positivos: "+positivos);
+            document.write("<br>");
+            document.write("Números negativos: "+negativos);
+            document.write("<br>");
+            document.write("Números pares: "+pares);
+            document.write("<br>");
+            document.write("Números impares: "+impares);
+            document.write("<br>");
+
+        </script>
+    </body>
+</html>

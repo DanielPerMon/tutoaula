@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+
+            var min=100000;
+            var max=0;
+
+            for(let i=0;i<2500;i++){
+                let num = Math.floor(Math.random() * (99999 - 4000 + 1) ) + 4000;
+
+                if(num>max)
+                    max=num
+                if(num<min)
+                    min=num;
+            }
+            
+            document.write("El mayor crédito otorgado es de $"+max+" y el menor es de $"+min);
+
+        </script>
+    </body>
+</html>

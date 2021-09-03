@@ -1,0 +1,16 @@
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+            var segundos = prompt("Segundos: ","");
+
+            if(segundos%60==0){
+                document.write("Minutos: "+segundos/60);
+            }
+            else{
+                document.write("Faltan "+(60-(segundos%60)+" para ser "+segundos/60+" minutos"));
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+            var res = 0;
+            var edad = prompt("Ingresa tu edad: ","");
+
+            if(edad >= 0 && edad <= 10)
+                document.write("Eres un niño");
+            else{
+                if(edad > 10 && edad <= 14)
+                    document.write("Eres un púber");
+                else{
+                    if(edad > 14 && edad <= 18)
+                        document.write("Eres un adolescente");
+                    else{
+                        if(edad > 18 && edad <= 25)
+                            document.write("Eres joven");
+                            if(edad > 25 && edad <= 65)
+                                document.write("Eres un adulto");
+                            else{
+                                if(edad > 65)
+                                    document.write("Eres un anciano");
+                            }
+                    }
+                }
+            }
+
+        </script>
+    </body>
+</html>

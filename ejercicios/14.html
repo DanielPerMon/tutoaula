@@ -1,0 +1,36 @@
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+            var res = 0;
+            var cantidad = prompt("Cantidad: ","");
+            
+            
+            if(cantidad > 500){
+                document.write("Descuento: 30%");
+                document.write("<br>");
+                document.write("Pago total: "+cantidad*0.70);
+            }
+            else{
+                if(cantidad < 500 && cantidad >= 200){
+                document.write("Descuento: 20%");
+                document.write("<br>");
+                document.write("Pago total: "+cantidad*0.80);
+                }
+                else{
+                    if(cantidad < 200 && cantidad >= 100){
+                        document.write("Descuento: 10%");
+                        document.write("<br>");
+                        document.write("Pago total: "+cantidad*0.90);
+                    }
+                    else{
+                        document.write("Descuento: --");
+                        document.write("<br>");
+                        document.write("Pago total: "+cantidad);
+                    }
+                }
+            }
+
+        </script>
+    </body>
+</html>

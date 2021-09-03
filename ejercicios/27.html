@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjercicioJS 27</title>
+</head>
+<body>
+    <header>EjercicioJs 27</header>
+    <section>
+        Escribir un algoritmo que determine cuántos trabajadores recibirán
+        un salario mayor o igual a  500, dadas la tarifa y las horas trabajadas.
+    </section>
+    <div>
+        <form>
+            Horas:
+            <input type="text" id="horas">
+            Tarifa:
+            <input type="text" id="tarifa">
+            <button type="button" onclick="calcular();">ok</button>
+
+        </form>
+    </div>
+    <div>
+        numero de trabajadores:
+        <p id="menor"></p>
+        <br>
+        trabajadores recibirán un salario mayor o igual a  500:
+        <p id="total"></p>
+
+    </div>
+</body>
+<script>
+     window.onload = function () {
+        window.numero =0;
+        window.menor =0;
+    }
+    function calcular() {
+
+        var horas = document.getElementById('horas').value;
+        var tarifa = document.getElementById('tarifa').value;
+        var x = horas*tarifa;
+        menor=menor+1;
+        if(x>=500){
+            numero=numero+1;
+        }
+        document.getElementById('total').innerHTML=numero;
+        document.getElementById('menor').innerHTML=menor;
+    }
+</script>
+</html>

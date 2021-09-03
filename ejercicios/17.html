@@ -1,0 +1,36 @@
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+            var res = 0;
+            var totalhoras = 0;
+            var totalextra = 0;
+            for(let i=0;i<200;i++){
+                var horas = prompt("Horas trabajadas: ","");
+                var tarifa = prompt("Tarifa hora: ","");
+
+                var diff = horas - 40;
+                
+                if(diff > 0){
+                    res += (diff*tarifa*1.5)+((horas-diff)*tarifa);
+                    totalextra += diff;
+                }
+                else{
+                    res += horas*tarifa;
+                }
+                totalhoras += horas;
+            }
+            
+            document.write("Horas trabajadas: "+totalhoras);
+            document.write("<br>");
+            document.write("Horas extra: "+totalextra);
+            document.write("<br>");
+            document.write("Tarifa: "+tarifa);
+            document.write("<br>");
+            document.write("Pago de horas extra: "+(diff*tarifa*1.5));
+            document.write("<br>");
+            document.write("Pago total: $"+res);
+
+        </script>
+    </body>
+</html>

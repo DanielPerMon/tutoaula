@@ -1,0 +1,33 @@
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+            var res = 0;
+            var sueldo = prompt("Sueldo Bruto: ","");
+            
+            if(sueldo > 2000){
+                document.write("Descuento: 18%");
+                document.write("<br>");
+                document.write("Sueldo Neto: "+sueldo*0.82);
+            }
+            else{
+                if(sueldo>1000){
+                    document.write("Descuento: 15%");
+                    document.write("<br>");
+                    document.write("Sueldo Neto: "+sueldo*0.85);
+                }
+                else{
+                    if(sueldo > 0){
+                        document.write("Descuento: 10%");
+                        document.write("<br>");
+                        document.write("Sueldo Neto: "+sueldo*0.90);
+                    }
+                    else{
+                        document.write("Cálculo no disponible");
+                    }
+                }
+            }
+
+        </script>
+    </body>
+</html>
